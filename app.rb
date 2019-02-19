@@ -32,8 +32,9 @@ class App < Sinatra::Base
     case params[:operation]
     
     when 'add'
-      sum = (number1 + number2).to_s
-    when
+      ans = (number1 + number2).to_s
+    when 'subtract'
+      ans
   end
 
 end
