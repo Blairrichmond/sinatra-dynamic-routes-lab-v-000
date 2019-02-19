@@ -26,8 +26,13 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do 
+    
+    ans = "Sorry! This can not be answered."
+    
     @num1 = params[:number1]
     @num2 = params[:number2]
+    
+    
     
     case params[:operation]
     
@@ -39,8 +44,7 @@ class App < Sinatra::Base
       ans = (number1 * number2).to_s
     when 'divide'
       ans = (number1 / number2).to_s
-    else
-      ans = "Sorry! This can not be answered."
+     
   end
 end
 
