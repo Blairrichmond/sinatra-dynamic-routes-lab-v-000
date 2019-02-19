@@ -42,5 +42,6 @@ class App < Sinatra::Base
     else
       ans = "Sorry! This can not be answered."
   end
+end
 
 end
