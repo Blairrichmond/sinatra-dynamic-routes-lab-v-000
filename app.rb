@@ -34,7 +34,8 @@ class App < Sinatra::Base
     when 'add'
       ans = (number1 + number2).to_s
     when 'subtract'
-      ans = (number1 - number2)
+      ans = (number1 - number2).to_s
+    when 'multiply'
   end
 
 end
