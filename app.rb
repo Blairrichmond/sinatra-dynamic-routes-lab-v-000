@@ -36,6 +36,11 @@ class App < Sinatra::Base
     when 'subtract'
       ans = (number1 - number2).to_s
     when 'multiply'
+      ans = (number1 * number2).to_s
+    when 'divide'
+      ans = (number1 / number2).to_s
+    else
+      ans = "Sorry! This can not be answered."
   end
 
 end
