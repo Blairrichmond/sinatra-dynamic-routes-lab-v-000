@@ -32,7 +32,7 @@ class App < Sinatra::Base
     case params[:operation]
     
     when 'add'
-      
+      sum = ()
   end
 
 end
